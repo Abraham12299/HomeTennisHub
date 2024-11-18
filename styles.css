@@ -1,0 +1,178 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(76, 175, 80, 0.9);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D87C5A; /* Change link color on hover */
+}
+
+/* Fullscreen Sections */
+section {
+    min-height: 100vh; /* Full screen height */
+    padding: 50px 30px;
+    text-align: center;
+}
+
+/* Home Section Styles */
+#home {
+    background-color: #E3F2FD; /* Light Blue */
+}
+
+#home h1 {
+    font-size: 3em; /* Larger font size */
+    color: #1976D2; /* Blue */
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #F0F4C3; /* Light Green */
+}
+
+.admin-contacts-container {
+    display: flex;
+    justify-content: center; /* Center the coach info */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Spacing between coach profiles */
+    margin-top: 20px; /* Add some spacing from the heading */
+}
+
+/* Style for each coach's profile */
+.admin-profile {
+    background-color: white; /* Background for each profile */
+    padding: 20px; /* Padding around each profile */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 200px; /* Fixed width for each profile */
+    text-align: center; /* Center text in profiles */
+}
+
+/* Make images circular */
+.profile-img {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px; /* Space below images */
+}
+
+/* Lost & Found Section Styles */
+#lost-found {
+    background-color: #FFFDE7; /* Light Yellow */
+}
+
+/* Form Centering */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    margin-top: 20px; /* Add spacing above the form */
+}
+
+/* Make input and textarea larger */
+input[type="text"], textarea {
+    width: 300px; /* Increase the width of input and textarea */
+    padding: 10px; /* Add padding for better usability */
+    margin-bottom: 10px; /* Space between elements */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Shop Section Styles */
+#shop {
+    background-color: #FFEBEE; /* Light Red */
+}
+
+/* Menu Popup Styles */
+.menu-popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(76, 175, 80, 0.9);
+    z-index: 2000;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.menu-popup.open {
+    display: block; /* Show when opened */
+    transform: translateX(0); /* Slide in */
+}
+
+.menu-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Make the close icon white for contrast */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Footer background color */
+    color: white; /* Footer text color */
+}
+
+/* Social Media Icon Styles */
+.social-media {
+    display: flex; /* Flex layout for icons */
+    justify-content: center; /* Center icons */
+    margin-top: 10px; /* Space above icons */
+}
+
+.social-icon {
+    margin: 0 5px; /* Space between icons */
+    color: #4CAF50; /* Icon color */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s; /* Transition effect on hover */
+}
+
+.social-icon:hover {
+    color: #D87C5A; /* Change icon color on hover */
+}

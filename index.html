@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" onclick="location.reload()">🎾 Tennis Hub</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="openMenu()">Menu</a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#lost-found">Lost & Found</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="menuPopup" class="menu-popup">
+        <span class="close" onclick="closeMenu()">&times;</span>
+        <h2 style="color: #4CAF50;">Menu</h2>
+        <ul>
+            <li><a href="#lost-found">Lost & Found</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <section id="home" class="home">
+        <h1>Welcome to Tennis Hub</h1>
+        <p>Book your court before you arrive. Engage with the community and enjoy our services!</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 style="text-align: center;">Contact Admins</h2>
+        <div id="admin-contacts" class="admin-contacts-container">
+            <div class="admin-profile">
+                <img src="Abraham.png" alt="Coach Abraham" class="profile-img">
+                <h3>Coach Abraham</h3>
+                <p>0503698521</p>
+                <div class="social-media">
+                    <a href="mailto:abraham@example.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/qr/TEA4MYWBRWCHF1" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/coach_abraham" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="admin-profile">
+                <img src="Mohammed.png" alt="Coach Mohammed" class="profile-img">
+                <h3>Coach Mohammed</h3>
+                <p>0241478523</p>
+                <div class="social-media">
+                    <a href="mailto:mohammed@example.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/qr/TEA4MYWBRWCHF1" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/coach_mohammed" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="admin-profile">
+                <img src="Bismark.png" alt="Coach Bismark" class="profile-img">
+                <h3>Coach Bismark</h3>
+                <p>0271236547</p>
+                <div class="social-media">
+                    <a href="mailto:bismark@example.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/qr/TEA4MYWBRWCHF1" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/coach_bismark" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lost-found">
+        <h2>Report a Lost Item</h2>
+        <form id="lostItemForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <textarea id="itemDescription" placeholder="Description" required></textarea>
+            <button type="submit">Report Lost Item</button>
+        </form>
+    </section>
+    
+    <section id="shop">
+        <h2 style="text-align: center;">Shop</h2>
+        <p style="text-align: center; font-size: 1.5em; color: #D87C5A;">Coming Soon!</p>
+
+ 
+
+    </section>
+    <template>
+        <main>
+            <h1> Upload a file</h1>
+            
+            <form method="post">
+                <label for="file">File</label> 
+                <input id="file" name="file" type="file">
+                <br /><br />
+                <button>Upload</button>
+            </form>
+
+        </main>
+    </template>
+
+    <footer>
+        <p>&copy; 2024 Tennis Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
